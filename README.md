@@ -1,5 +1,9 @@
 # Pomodoro
 
+A plugin for [Mazapan](https://mazapan.dev), listed in its [plugin registry](https://mazapan.dev/plugins/pomodoro/).
+
+![A focus session, today and the week (sample data)](media/panel.webp)
+
 Focus in sessions, with breaks between them: 25 minutes of focus, a short
 break, again; after four, a long break. Every length is yours to set.
 
@@ -30,3 +34,31 @@ a restart picks it up where it was. Sessions and minutes are kept by day in
 
 Its settings are read as they change: changing one doesn't reload the
 shell, and a running session goes on.
+
+## Install
+
+In Mazapan, the Plugins panel (`SUPER + SHIFT + P`) lists it under the
+community's: its page shows what it can do before you install it. Or:
+
+```sh
+mazapan plugins add pomodoro
+mazapan apply
+```
+
+Updates come through the registry: `mazapan plugins update pomodoro`, or the
+Updates panel, asking again only for anything new it would be able to do.
+
+## Develop
+
+```sh
+git clone https://github.com/rick-dev-creator/mazapan-pomodoro
+mazapan plugins dev mazapan-pomodoro     # applied again on every save
+mazapan plugins check mazapan-pomodoro   # every theme, every language, before a release
+```
+
+A release is a tag, `vX.Y.Z`, the same as `version` in plugin.toml; the
+registry lists it once it passes its checks.
+
+## License
+
+MIT

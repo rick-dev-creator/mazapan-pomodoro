@@ -1,11 +1,19 @@
 [plugin]
 id = "pomodoro"
 name = "Pomodoro"
-version = "0.1.1"
+version = "0.2.0"
 api = 1
 description = "Focus in sessions with breaks between them: a ring that fills as the time goes, the sessions of each set, what you're working on, Do Not Disturb while you focus, and today's and the week's focus at a glance"
 requires = ["shell-bar", "hypr-base"]
 categories = ["panel", "bar", "tools"]
+author = "rickdev"
+homepage = "https://github.com/rick-dev-creator/mazapan-pomodoro"
+license = "MIT"
+
+# How it looks, for the plugin gallery (mazapan.dev/plugins).
+[gallery]
+icon = "media/icon.svg"
+screenshots = ["media/panel.webp"]
 
 [settings]
 # Opens the Pomodoro panel.
